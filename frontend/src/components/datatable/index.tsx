@@ -24,13 +24,13 @@ const DataTable = () => {
 
     }, [activePage])
 
-    const changePage = (index: number) =>{
+    const changePage = (index: number) => {
         setActviePage(index);
     }
 
     return (
         <>
-        <Pagination page={page} onPageChange={changePage}/>
+            <Pagination page={page} onPageChange={changePage} />
             <div className="table-responsive">
                 <table className="table table-striped table-sm">
                     <thead>
@@ -52,8 +52,6 @@ const DataTable = () => {
                                 <td>{item.amount.toFixed(2)}</td>
                             </tr>
                         ))}
-
-
                     </tbody>
                 </table>
             </div>
